@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  /*Primary*/
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /*Neutral*/
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Spartan', sans-serif;
+  min-height: 100vh;
+}
+
+.proof {
+  padding: 5rem 1.8rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.proof__top {
+  text-align: center;
+}
+
+.proof__heading {
+  font-size: 3.2rem;
+  color: var(--very-dark-magenta);
+  margin-bottom: 2.5rem;
+  line-height: 1em;
+}
+
+.proof__paragraph {
+  color: var(--dark-grayish-magenta);
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.proof__ratings {
+  margin: 3em 0;
+}
+
+.proof__rating {
+  background-color: var(--light-grayish-magenta);
+  border-radius: 1rem;
+  padding: 2rem 0;
+}
+
+.proof__rating + .proof__rating {
+  margin-top: 1.5rem;
+}
+
+.proof__stars {
+  margin-bottom: 1em;
+}
+
+.proof__stars > img {
+  margin: 0 0.3rem;
+}
+
+.proof__rating > span {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+}
+
+.proof__item {
+  background-color: var(--very-dark-magenta);
+  border-radius: 1rem;
+  padding: 2.8em 2.4rem;
+}
+
+.proof__item + .proof__item {
+  margin-top: 1em;
+}
+
+.proof__customer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.2em;
+}
+
+.proof__picture {
+  display: block;
+  border-radius: 10rem;
+  height: 4.2rem;
+  margin-right: 1.5em;
+}
+
+.proof__name {
+  color: var(--white);
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+
+.proof__status {
+  color: var(--soft-pink);
+}
+
+.proof__review {
+  color: var(--light-grayish-magenta);
+  line-height: 1.5em;
+}
+
+@media (min-width: 825px) {
+
+  body {
+    font-size: 1.3rem;
+  }
+
+  .proof {
+    width: 120rem;
+    max-width: 95%;
+  }
+
+  .proof__top {
+    display: flex;  
+    margin-bottom: 4em;
+  }
+
+  .proof__text {
+    max-width: 40rem;
+    text-align: left;
+    width: 40%;
+  }
+
+  .proof__heading {
+    font-size: 4.5rem;
+    margin-bottom: 0.2em;
+  }
+
+  .proof__ratings {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    width: 60%;
+
+  }
+
+  .proof__rating {
+    display: flex;
+    align-items: center;
+    width: 44rem;
+  }
+
+  .proof__stars {
+    margin: 0 2.5rem;
+  }
+
+  .proof__bottom {
+    display: flex;
+  }
+
+  .proof__item + .proof__item {
+    margin: 0 0 0 2rem;
+  }
+
+  .proof__rating:first-child {
+    align-self: flex-start;
+  }
+
+  .proof__rating:last-child {
+    align-self: flex-end;
+  }
+
+}
